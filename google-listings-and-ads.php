@@ -26,6 +26,8 @@ use Automattic\WooCommerce\GoogleListingsAndAds\Internal\Requirements\VersionVal
 use Automattic\WooCommerce\GoogleListingsAndAds\PluginFactory;
 use Psr\Container\ContainerInterface;
 
+/// TEST pr1
+
 defined( 'ABSPATH' ) || exit;
 
 define( 'WC_GLA_VERSION', '1.13.3' ); // WRCS: DEFINED_VERSION.
