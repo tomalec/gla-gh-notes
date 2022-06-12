@@ -13,13 +13,13 @@ changelog:
       labels:
         - changelog-add
         - "type: enhancement"
-    - title: Updated
-      labels:
-        - changelog-update
-    - title: Tweaked
+    - title: Tweaks
       labels:
         - changelog-tweak
         - "type: technical debt"
+    - title: Updates
+      labels:
+        - changelog-update
     - title: Other Changes
       labels:
         - "*"

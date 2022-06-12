@@ -1,0 +1,34 @@
+name: Add Branch Type Label
+
+on:
+  pull_request:
+    types: opened
+
+jobs:
+  add_labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.head_ref, 'add/') }}
+        with:
+          labels: |
+            "type: enhancement"
+            "changelog: add"
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.head_ref, 'fix/') }}
+        with:
+          labels: |
+            "type: bug"
+            "changelog: fix"
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.head_ref, 'update/') || startsWith(github.head_ref, 'remove/') }}
+        with:
+          labels: |
+            "type: bug"
+            "changelog: update"
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.head_ref, 'tweak/') || ${{ startsWith(github.head_ref, 'dev/') }}
+        with:
+          labels: |
+            "changelog: tweak"
