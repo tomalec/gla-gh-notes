@@ -13,22 +13,22 @@ jobs:
         if: ${{ startsWith(github.head_ref, 'add/') }}
         with:
           labels: |
-            "type: enhancement"
-            "changelog: add"
+            type: enhancement
+            changelog: add
       - uses: actions-ecosystem/action-add-labels@v1
         if: ${{ startsWith(github.head_ref, 'fix/') }}
         with:
           labels: |
-            "type: bug"
-            "changelog: fix"
+            type: bug
+            changelog: fix
       - uses: actions-ecosystem/action-add-labels@v1
         if: ${{ startsWith(github.head_ref, 'update/') || startsWith(github.head_ref, 'remove/') }}
         with:
           labels: |
-            "type: bug"
-            "changelog: update"
+            type: bug
+            changelog: update
       - uses: actions-ecosystem/action-add-labels@v1
         if: ${{ startsWith(github.head_ref, 'tweak/') || startsWith(github.head_ref, 'dev/') }}
         with:
           labels: |
-            "changelog: tweak"
+            changelog: tweak
