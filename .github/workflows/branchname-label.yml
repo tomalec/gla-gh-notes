@@ -28,7 +28,7 @@ jobs:
             "type: bug"
             "changelog: update"
       - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ startsWith(github.head_ref, 'tweak/') || ${{ startsWith(github.head_ref, 'dev/') }}
+        if: ${{ startsWith(github.head_ref, 'tweak/') || startsWith(github.head_ref, 'dev/') }}
         with:
           labels: |
             "changelog: tweak"
