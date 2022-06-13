@@ -1,24 +1,24 @@
 changelog:
   exclude:
     labels:
-      - no-changelog
+      - "changelog: none"
     authors:
       - dependabot[bot]
   categories:
     - title: Fixes 🛠
       labels:
-        - changelog-fix
+        - "changelog: fix"
         - "type: bug"
     - title: New Features 🎉
       labels:
-        - changelog-add
+        - "changelog: add"
         - "type: enhancement"
     - title: Updated
       labels:
-        - changelog-update
+        - "changelog: update"
     - title: Tweaked
       labels:
-        - changelog-tweak
+        - "changelog: tweak"
         - "type: technical debt"
     - title: Other Changes
       labels:
