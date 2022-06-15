@@ -1,0 +1,15 @@
+name: Add Branch Type Label
+
+on:
+  pull_request:
+    types: opened
+
+jobs:
+  SetLabels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set labels
+        uses: woocommerce/grow/github-actions/branch-label@add/label-action
