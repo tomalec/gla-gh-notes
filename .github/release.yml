@@ -20,6 +20,9 @@ changelog:
       labels:
         - "changelog: tweak"
         - "type: technical debt"
+    - title: Updates
+      labels:
+        - changelog-update
     - title: Other Changes
       labels:
         - "*"
