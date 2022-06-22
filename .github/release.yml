@@ -5,6 +5,10 @@ changelog:
     authors:
       - dependabot[bot]
   categories:
+    - title: AND
+      labels:
+        - "cl-add"
+        - "package-foo"
     - title: Fixes 🛠
       labels:
         - "changelog: fix"
