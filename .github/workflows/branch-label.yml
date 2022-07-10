@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set labels
-        uses: woocommerce/grow/packages/js/github-actions/actions/branch-label@add/label-action
+        uses: woocommerce/grow/packages/js/github-actions/actions/branch-label@add/dev-label
