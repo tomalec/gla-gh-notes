@@ -3,26 +3,43 @@ changelog:
     labels:
       - "changelog: none"
     authors:
-      - dependabot[bot]
+      - dependabot
+      - github-actions
+
   categories:
-    - title: Fixes 🛠
+      # Major level
+    - title: [Breaking] Breaking Changes 🚨
       labels:
-        - "changelog: fix"
-        - "type: bug"
-    - title: New Features 🎉
+        - "changelog: breaking"
+
+    # Minor level
+    - title: [Add] New Features 🎉
       labels:
         - "changelog: add"
         - "type: enhancement"
-    - title: Updated
+
+    - title: [Update] Updated ✨
       labels:
         - "changelog: update"
-    - title: Tweaked
+
+    # Patch level
+    - title: [Fix] Fixes 🛠
+      labels:
+        - "changelog: fix"
+        - "type: bug"
+
+    - title: [Tweak] Tweaked 🔧
       labels:
         - "changelog: tweak"
-        - "type: technical debt"
-    - title: Updates
+
+    - title: [Dev] Developer-facing changes 🧑‍💻
       labels:
-        - changelog-update
+        - "changelog: dev"
+
+    - title: [Doc] Documentation 📚
+      labels:
+        - "changelog: docs"
+
     - title: Other Changes
       labels:
         - "*"
